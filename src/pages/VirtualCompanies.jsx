@@ -61,7 +61,7 @@ function VirtualCompanies() {
 							application development.
 						</li>
 						<li className='p-4'>
-							<strong>OVHcloud</strong> – A cloud platform offering a range of
+							<strong>OVH Cloud</strong> – A cloud platform offering a range of
 							services including compute, storage, and networking.
 						</li>
 						<li className='p-4'>
