@@ -11,7 +11,7 @@ const Navbar = () => {
 	return (
 		<header className='sticky top-0 z-10'>
 			<nav className='px-8 py-8 flex justify-between items-center bg-white'>
-				<Link className='text-3xl font-bold leading-none' href='/virtua'>
+				<Link className='text-3xl font-bold leading-none' href='/'>
 					<svg className='h-10 w-10' alt='logo' viewBox='0 0 10240 10240'>
 						<path
 							xmlns='http://www.w3.org/2000/svg'
@@ -35,8 +35,8 @@ const Navbar = () => {
 				<ul className='hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6'>
 					<li>
 						<Link
-							className={pathname === '/virtua' ? activeLink : inactiveLink}
-							to='/virtua'
+							className={pathname === '/' ? activeLink : inactiveLink}
+							to='/'
 						>
 							Home
 						</Link>
@@ -59,10 +59,8 @@ const Navbar = () => {
 					</li>
 					<li>
 						<Link
-							className={
-								pathname === '/virtua/intro' ? activeLink : inactiveLink
-							}
-							to='/virtua/intro'
+							className={pathname === '/intro' ? activeLink : inactiveLink}
+							to='/intro'
 						>
 							Intro
 						</Link>
@@ -85,8 +83,8 @@ const Navbar = () => {
 					</li>
 					<li>
 						<Link
-							className={pathname === '/virtua/vm' ? activeLink : inactiveLink}
-							to='/virtua/vm'
+							className={pathname === '/vm' ? activeLink : inactiveLink}
+							to='/vm'
 						>
 							Virtualization
 						</Link>
@@ -109,10 +107,8 @@ const Navbar = () => {
 					</li>
 					<li>
 						<Link
-							className={
-								pathname === '/virtua/softwares' ? activeLink : inactiveLink
-							}
-							to='/virtua/softwares'
+							className={pathname === '/softwares' ? activeLink : inactiveLink}
+							to='/softwares'
 						>
 							Logiciels
 						</Link>
@@ -135,10 +131,8 @@ const Navbar = () => {
 					</li>
 					<li>
 						<Link
-							className={
-								pathname === '/virtua/companies' ? activeLink : inactiveLink
-							}
-							to='/virtua/companies'
+							className={pathname === '/companies' ? activeLink : inactiveLink}
+							to='/companies'
 						>
 							Entreprises
 						</Link>
@@ -161,10 +155,8 @@ const Navbar = () => {
 					</li>
 					<li>
 						<Link
-							className={
-								pathname === '/virtua/cloud' ? activeLink : inactiveLink
-							}
-							to='/virtua/cloud'
+							className={pathname === '/cloud' ? activeLink : inactiveLink}
+							to='/cloud'
 						>
 							Cloud Computing
 						</Link>
@@ -187,10 +179,8 @@ const Navbar = () => {
 					</li>
 					<li>
 						<Link
-							className={
-								pathname === '/virtua/outro' ? activeLink : inactiveLink
-							}
-							to='/virtua/outro'
+							className={pathname === '/outro' ? activeLink : inactiveLink}
+							to='/outro'
 						>
 							Outro
 						</Link>
@@ -200,13 +190,13 @@ const Navbar = () => {
 				<div>
 					<Link
 						className='hidden lg:inline-block lg:ml-auto lg:mr-3 py-2 px-6 bg-gray-50 hover:bg-gray-100 text-base text-gray-900 font-bold rounded-xl transition duration-200'
-						to='/virtua/signIn'
+						to='/signIn'
 					>
 						Sign In
 					</Link>
 					<Link
 						className='hidden lg:inline-block py-2 px-6 bg-blue-500 hover:bg-blue-600 text-base text-white font-bold rounded-xl transition duration-200'
-						to='/virtua/signUp'
+						to='/signUp'
 					>
 						Sign up
 					</Link>

@@ -4,7 +4,7 @@ function VirtualSoftwares() {
 	return (
 		<div className='w-full bg-white rounded-lg p-6 pb-8 mt-5'>
 			<h1 className='text-3xl font-bold underline mb-10 text-center'>
-				VirtualSoftwares
+				Virtualization Softwares
 			</h1>
 			<div className='content'>
 				<div className='p-4 mt-5'>

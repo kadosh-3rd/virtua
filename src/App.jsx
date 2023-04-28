@@ -8,6 +8,7 @@ import VirtualSoftwares from './pages/VirtualSoftwares';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import Outro from './pages/Outro';
+import Webography from './pages/Webography';
 
 import Cloud from './assets/cloud_arch.png';
 
@@ -20,7 +21,7 @@ export default function App() {
 			<main className='w-[75%] m-auto p-10'>
 				<Routes>
 					<Route
-						path='/virtua'
+						index
 						element={
 							<>
 								<div className='w-full bg-white rounded-lg p-6 pb-8 mt-2'>
@@ -53,7 +54,7 @@ export default function App() {
 										<h1 className='text-3xl font-bold underline'>SOMMAIRE</h1>
 									</div>
 									<div className='title p-10 pt-2'>
-										<Link to={'/virtua/intro'} className='hover:underline'>
+										<Link to={'/intro'} className='hover:underline'>
 											<h1 className='text-3xl font-bold text-center'>
 												Introduction
 											</h1>
@@ -62,26 +63,26 @@ export default function App() {
 									<div className='subtitles'>
 										<ul className='text-2xl'>
 											<li className='w-[50%] relative left-[20%] py-3 decoration-cyan-600 hover:underline text-cyan-600'>
-												<Link to={'/virtua/vm'}>I. Virtualisation</Link>
+												<Link to={'/vm'}>I. Virtualisation</Link>
 											</li>
 											<li className='w-[50%] relative left-[50%] py-3 decoration-cyan-600 hover:underline text-cyan-600'>
-												<Link to={'/virtua/softwares'}>
+												<Link to={'/softwares'}>
 													II. Logiciels de virtualisation
 												</Link>
 											</li>
 											<li className='w-[50%] relative left-[20%] py-3 decoration-cyan-600 hover:underline text-cyan-600'>
-												<Link to={'/virtua/cloud'}>III. Cloud Computing</Link>
+												<Link to={'/companies'}>III. Entreprises</Link>
 											</li>
 											<li className='w-[50%] relative left-[50%] py-3 decoration-cyan-600 hover:underline text-cyan-600'>
-												<Link to={'/virtua/companies'}>IV. Entreprises</Link>
+												<Link to={'/cloud'}>IV. Cloud Computing</Link>
 											</li>
 											<li className='w-[50%] relative left-[20%] py-3 decoration-cyan-600 hover:underline text-cyan-600'>
-												<Link to={'/virtua/thanks'}>V. Sources</Link>
+												<Link to={'/src'}>V. Sources</Link>
 											</li>
 										</ul>
 									</div>
 									<div className='title px-6 pt-12 pb-3'>
-										<Link to={'/virtua/outro'} className='hover:underline'>
+										<Link to={'/outro'} className='hover:underline'>
 											<h1 className='text-3xl font-bold text-center'>
 												Conclusion
 											</h1>
@@ -91,14 +92,15 @@ export default function App() {
 							</>
 						}
 					/>
-					<Route path='/virtua/intro' element={<Intro />} />
-					<Route path='/virtua/vm' element={<Virtualization />} />
-					<Route path='/virtua/cloud' element={<CloudComputing />} />
-					<Route path='/virtua/companies' element={<VirtualCompanies />} />
-					<Route path='/virtua/softwares' element={<VirtualSoftwares />} />
-					<Route path='/virtua/signIn' element={<SignIn />} />
-					<Route path='/virtua/signUp' element={<SignUp />} />
-					<Route path='/virtua/outro' element={<Outro />} />
+					<Route path='/intro' element={<Intro />} />
+					<Route path='/vm' element={<Virtualization />} />
+					<Route path='/cloud' element={<CloudComputing />} />
+					<Route path='/companies' element={<VirtualCompanies />} />
+					<Route path='/softwares' element={<VirtualSoftwares />} />
+					<Route path='/signIn' element={<SignIn />} />
+					<Route path='/signUp' element={<SignUp />} />
+					<Route path='/outro' element={<Outro />} />
+					<Route path='/src' element={<Webography />} />
 				</Routes>
 			</main>
 		</>

@@ -1,11 +1,16 @@
 function CloudComputing() {
 	return (
 		<div className='w-full bg-white rounded-lg p-6 pb-8 mt-5'>
-			<h1 className='text-3xl font-bold underline mb-10 text-center'>
-				CloudComputing
+			<h1 className='text-3xl font-bold underline my-10 text-center'>
+				Cloud Computing : Basics & Benefits
 			</h1>
+			<img
+				src='https://d2slcw3kip6qmk.cloudfront.net/marketing/blog/2020Q2/microsoft-teams-best-practices/IaaS-PaaS-SaaS-slanted-control.png'
+				alt='Basics of Clud computing'
+				className='rounded-lg m-auto'
+			/>
 			<div className='content'>
-				<div className='p-4 mt-5'>
+				<div className='p-4 mt-6'>
 					<p>
 						In Simplest terms, cloud computing means storing and accessing the
 						data and programs on remote servers that are hosted on the internet
@@ -13,8 +18,8 @@ function CloudComputing() {
 						computing is also referred to as Internet-based computing.
 					</p>
 					<br />
-					<p>Ils comptent plusieurs avantages tels que :</p>
-					<ul>
+					<p>There are a lot of benefits like :</p>
+					<ul className='list-disc pl-8'>
 						<li className='p-4'>
 							<strong>Scalability :</strong> With Cloud hosting, it is easy to
 							grow and shrink the number and size of servers based on the need.

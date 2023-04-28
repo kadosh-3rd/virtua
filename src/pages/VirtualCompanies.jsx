@@ -1,18 +1,23 @@
 function VirtualCompanies() {
 	return (
 		<div className='w-full bg-white rounded-lg p-6 pb-8 mt-5'>
-			<h1 className='text-3xl font-bold underline mb-10 text-center'>
-				VirtualCompanies
+			<h1 className='text-3xl font-bold underline my-10 text-center'>
+				Companies working on Virtualization
 			</h1>
+			<img
+				src='https://th.bing.com/th/id/R.6358ec492a6d7886cd33c399a99e3f34?rik=TVGDpTw%2fATjDEA&pid=ImgRaw&r=0'
+				alt='Companies working on building cloud computing'
+				className='rounded-lg m-auto'
+			/>
 			<div className='content'>
 				<div className='p-4 mt-5'>
 					<p>
-						A ce jour il existe moult companies pionnières en matière de
-						Virtualisation et Cloud Computing.
+						There's a lot of companies working on the development and growing of
+						cloud computing and virtualization.
 					</p>
 					<br />
-					<p>Citons entre autres :</p>
-					<ul>
+					<p>Let's have a talk about :</p>
+					<ul className='list-disc pl-8'>
 						<li className='p-4'>
 							<strong>Amazon Web Services(AWS):</strong> One of the most
 							successful cloud-based businesses is Amazon Web Services(AWS),
