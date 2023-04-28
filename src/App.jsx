@@ -20,7 +20,7 @@ export default function App() {
 			<main className='w-[75%] m-auto p-10'>
 				<Routes>
 					<Route
-						index
+						path='/virtua'
 						element={
 							<>
 								<div className='w-full bg-white rounded-lg p-6 pb-8 mt-2'>
@@ -53,7 +53,7 @@ export default function App() {
 										<h1 className='text-3xl font-bold underline'>SOMMAIRE</h1>
 									</div>
 									<div className='title p-10 pt-2'>
-										<Link to={'/intro'} className='hover:underline'>
+										<Link to={'/virtua/intro'} className='hover:underline'>
 											<h1 className='text-3xl font-bold text-center'>
 												Introduction
 											</h1>
@@ -62,26 +62,26 @@ export default function App() {
 									<div className='subtitles'>
 										<ul className='text-2xl'>
 											<li className='w-[50%] relative left-[20%] py-3 decoration-cyan-600 hover:underline text-cyan-600'>
-												<Link to={'/vm'}>I. Virtualisation</Link>
+												<Link to={'/virtua/vm'}>I. Virtualisation</Link>
 											</li>
 											<li className='w-[50%] relative left-[50%] py-3 decoration-cyan-600 hover:underline text-cyan-600'>
-												<Link to={'/softwares'}>
+												<Link to={'/virtua/softwares'}>
 													II. Logiciels de virtualisation
 												</Link>
 											</li>
 											<li className='w-[50%] relative left-[20%] py-3 decoration-cyan-600 hover:underline text-cyan-600'>
-												<Link to={'/cloud'}>III. Cloud Computing</Link>
+												<Link to={'/virtua/cloud'}>III. Cloud Computing</Link>
 											</li>
 											<li className='w-[50%] relative left-[50%] py-3 decoration-cyan-600 hover:underline text-cyan-600'>
-												<Link to={'/companies'}>IV. Entreprises</Link>
+												<Link to={'/virtua/companies'}>IV. Entreprises</Link>
 											</li>
 											<li className='w-[50%] relative left-[20%] py-3 decoration-cyan-600 hover:underline text-cyan-600'>
-												<Link to={'/thanks'}>V. Sources</Link>
+												<Link to={'/virtua/thanks'}>V. Sources</Link>
 											</li>
 										</ul>
 									</div>
 									<div className='title px-6 pt-12 pb-3'>
-										<Link to={'/outro'} className='hover:underline'>
+										<Link to={'/virtua/outro'} className='hover:underline'>
 											<h1 className='text-3xl font-bold text-center'>
 												Conclusion
 											</h1>
@@ -91,14 +91,14 @@ export default function App() {
 							</>
 						}
 					/>
-					<Route path='/intro' element={<Intro />} />
-					<Route path='/vm' element={<Virtualization />} />
-					<Route path='/cloud' element={<CloudComputing />} />
-					<Route path='/companies' element={<VirtualCompanies />} />
-					<Route path='/softwares' element={<VirtualSoftwares />} />
-					<Route path='/signIn' element={<SignIn />} />
-					<Route path='/signUp' element={<SignUp />} />
-					<Route path='/outro' element={<Outro />} />
+					<Route path='/virtua/intro' element={<Intro />} />
+					<Route path='/virtua/vm' element={<Virtualization />} />
+					<Route path='/virtua/cloud' element={<CloudComputing />} />
+					<Route path='/virtua/companies' element={<VirtualCompanies />} />
+					<Route path='/virtua/softwares' element={<VirtualSoftwares />} />
+					<Route path='/virtua/signIn' element={<SignIn />} />
+					<Route path='/virtua/signUp' element={<SignUp />} />
+					<Route path='/virtua/outro' element={<Outro />} />
 				</Routes>
 			</main>
 		</>

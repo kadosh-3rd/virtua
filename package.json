@@ -6,10 +6,10 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite --host",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist",
 		"build": "vite build",
-		"preview": "vite preview",
-		"predeploy": "yarn build",
-		"deploy": "gh-pages -d dist"
+		"preview": "vite preview"
 	},
 	"dependencies": {
 		"react": "^18.2.0",
