@@ -65,7 +65,7 @@ function VirtualCompanies() {
 							services including compute, storage, and networking.
 						</li>
 						<li className='p-4'>
-							<strong>VMware Cloud</strong> – A cloud platform by VMware,
+							<strong>VMWare Cloud</strong> – A cloud platform by VMware,
 							offering services such as virtualization, cloud management, and
 							network virtualization.
 						</li>
