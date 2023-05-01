@@ -51,12 +51,22 @@ function VirtualSoftwares() {
 					<table className='border border-gray-400 mb-5 w-full max-w-full bg-white'>
 						<thead>
 							<tr>
-								<th className='bg-gray-300 border p-3'>Logiciel</th>
-								<th className='bg-gray-300 border p-3'>Virtualisation</th>
-								<th className='bg-gray-300 border p-3'>Architecture</th>
-								<th className='bg-gray-300 border p-3'>OS hôte</th>
-								<th className='bg-gray-300 border p-3'>OS invité</th>
-								<th className='bg-gray-300 border p-3'>Prix</th>
+								<th className='bg-gray-300 border border-gray-400 p-3'>
+									Logiciel
+								</th>
+								<th className='bg-gray-300 border border-gray-400 p-3'>
+									Virtualisation
+								</th>
+								<th className='bg-gray-300 border border-gray-400 p-3'>
+									Architecture
+								</th>
+								<th className='bg-gray-300 border border-gray-400 p-3'>
+									OS hôte
+								</th>
+								<th className='bg-gray-300 border border-gray-400 p-3'>
+									OS invité
+								</th>
+								<th className='bg-gray-300 border border-gray-400 p-3'>Prix</th>
 							</tr>
 						</thead>
 						<tbody>
