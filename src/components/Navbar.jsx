@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
@@ -7,6 +8,8 @@ const Navbar = () => {
 
 	const location = useLocation();
 	const { pathname } = location;
+
+	const [open, setOpen] = useState(false);
 
 	return (
 		<header className='sticky top-0 z-10'>
@@ -19,10 +22,13 @@ const Navbar = () => {
 						></path>
 					</svg>
 				</Link>
-				<div className='lg:hidden'>
-					<button className='navbar-burger flex items-center text-blue-600 p-3'>
+				<div className='lg:hidden absolute right-12'>
+					<button
+						className='navbar-burger flex items-center text-blue-600 p-3'
+						onClick={() => setOpen(!open)}
+					>
 						<svg
-							className='block h-4 w-4 fill-current'
+							className='block h-5 w-5 fill-current'
 							viewBox='0 0 20 20'
 							xmlns='http://www.w3.org/2000/svg'
 						>
@@ -32,7 +38,13 @@ const Navbar = () => {
 					</button>
 				</div>
 
-				<ul className='hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6'>
+				<ul
+					className={
+						open
+							? 'absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 flex-col'
+							: 'hidden absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2 lg:flex lg:mx-auto lg:items-center lg:w-auto lg:space-x-6'
+					}
+				>
 					<li>
 						<Link
 							className={pathname === '/' ? activeLink : inactiveLink}
