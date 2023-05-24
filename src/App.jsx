@@ -36,7 +36,7 @@ export default function App() {
 								<>
 									<div className='w-full bg-white rounded-lg p-6 pb-8 mt-2'>
 										<div className='title border border-gray-400 rounded-sm mb-10 lg:mb-16 p-12 pt-2 flex flex-col'>
-											<span className='text-[24px] md:text-2xl lg:text-3xl font-semibold lg:font-bold underline mb-10 lg:mb-12 mt-5'>
+											<span className='text-[24px] md:text-2xl lg:text-3xl font-semibold lg:font-bold underline mb-10 lg:mb-12 mt-5 text-gray-800'>
 												Thème :
 											</span>
 											<h1 className='text-xl md:text-2xl lg:text-3xl font-extrabold text-center italic text-gray-800'>
